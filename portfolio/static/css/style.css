@@ -250,6 +250,7 @@ nav {
         left: 100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
     }
 
     .main-nav li {
