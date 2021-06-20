@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="/portfolio/static/css/style.css">
+
+    <title>Michał Zawada</title>
+
+</head>
+
+<body class="background">
+
+    <nav>
+        <a href="#" class="logo">Michał Zawada</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fa fa-navicon"></i></label>
+        <ul class="main-nav">
+            <li><a href="">O mnie</a></li>
+            <li><a href="">Projekty</a></li>
+            <li><a href="">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="card">
+            <div class="cointainer_img">
+                <img src="{% static 'img/me.png' %}" alt="">
+            </div><div class="content_coment">
+                Kalamburko jest przeglądarkową grą online, polegającąna rywalizowaniu ze znajomymi w odgadywanie haseł.
+             </div>
+        </div>
+        <div class="card">
+            <div class="cointainer_img">
+                <img src="{% static 'img/me.png' %}" alt="">
+            </div><div class="content_coment">
+                Nazywam się Michał i jestem studentem informatyki na wydziale Zastosowań Informatyki i Matematyki SGGW. 
+                Technologie którymi operuje na co dzień są: Python, PostgreSQL, Angular, C++. 
+                Poza studiami, wolny czas staram się wykorzystywać na poznawanie nowinek technologicznych oraz uprawianie sportu.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>Some text</p>
+            <p>Some text</p>
+        </div>
+    </div>
+</body>
+
+</html>

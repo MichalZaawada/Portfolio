@@ -1,0 +1,181 @@
+<script>
+    $(document).ready(function () {
+
+        var lang = false;
+
+        $(document).on('click', '.lang', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'index_en' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+            $('.nav').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'nav_en' %}",
+                    success: function (response) {
+                        $('.nav').animate({ opacity: 1.0 }, 250);
+                        $('.nav').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.lang_en', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'index' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+            $('.nav').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'nav' %}",
+                    success: function (response) {
+                        $('.nav').animate({ opacity: 1.0 }, 250);
+                        $('.nav').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.about_me', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'aboutme' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.contact', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'contact' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.projects', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'projects' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.logo', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'index' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.about_me_en', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'aboutme_en' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.contact_en', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'contact_en' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.projects_en', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'projects_en' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.logo_en', function (e) {
+            e.preventDefault();
+            $('.content').animate({ opacity: 0 }, 250, function () {
+                $.ajax({
+                    type: 'POST',
+                    url: "{% url 'index_en' %}",
+                    success: function (response) {
+                        $('.content').animate({ opacity: 1.0 }, 250);
+                        $('.content').html(response);
+                    }
+                });
+            });
+        });
+
+    });
+
+    $(document).on('click', '.logo_en', function (e) {
+        e.preventDefault();
+        $('.content').animate({ opacity: 0 }, 250, function () {
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'index_en' %}",
+                success: function (response) {
+                    $('.content').animate({ opacity: 1.0 }, 250);
+                    $('.content').html(response);
+                }
+            });
+        });
+    });
+</script>
